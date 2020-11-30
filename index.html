@@ -24,7 +24,7 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-nav1">
         <div class="container justify-content-end">
              <div class="row ">
-                <ul class="navbar-nav">
+                <ul class="navbar-nav collapse navbar-collapse">
                     <li class="nav-item">
                         <a class="nav-link mr-auto text-light" href="tel:+6547646468"><i class="fa fa-phone"></i> Call Us</a>
                     </li>
@@ -127,7 +127,7 @@
 
 
     <!--Carousel Code -->
-    <div id="homeCarousel" class="carousel slide" data-ride="carousel">
+    <div id="homeCarousel" class="carousel slide pb-3" data-ride="carousel">
         <ol class="carousel-indicators">
             <li data-target="#homeCarousel" data-slide-to="0" class="active"></li>
             <li data-target="#homeCarousel" data-slide-to="1"></li>
@@ -168,13 +168,12 @@
 
 
     <!-- First row cards -->
-    <div class="container">
-    
+    <div class="container"> 
         <!-- First row Cards -->
-        <div class="row row-content">
+        <div class="row row-content pb-3">
             <div class="col col-md-4 mx-auto">
                 <div class="card" style="width: 20rem;">
-                    <img src="img/shop.jpeg" class="card-img-top" alt="...">
+                    <img src="img/shop.jpeg" class="card-img-top"  height="200" alt="...">
                     <div class="card-body">
                       <h5 class="card-title">Shop</h5>
                       <p class="card-text">We offer the top bike brands and components to make your rides unforgettable </p>
@@ -183,68 +182,85 @@
             </div>
             <div class="col col-md-4 mx-auto d-flex align-items-stretch">
                 <div class="card" style="width: 20rem;">
-                    <img src="img/Service.jpeg" class="card-img-top" alt="...">
+                    <img src="img/Service.jpeg" class="card-img-top" height="200" alt="...">
                     <div class="card-body">
                       <h5 class="card-title">Services</h5>
-                      <p class="card-text">We offer services at our door step with our mobile repair shop and MTB clinics van</p>
+                      <p class="card-text">We offer services at our door step with our mobile repair shop and MTB clinics van.</p>
                     </div>
                 </div>
             </div>
             <div class="col col-md-4 mx-auto">
                 <div class="card" style="width: 20rem;">
-                    <img src="img/trails.jpeg" class="card-img-top" alt="...">
+                    <img src="img/trails.jpeg" class="card-img-top" height="200" alt="...">
                     <div class="card-body">
                       <h5 class="card-title">Trail Reviews</h5>
-                      <p class="card-text">Review of NC top Mountain bike trails. Includes maps, videos and photos </p>
+                      <p class="card-text">Review of NC top Mountain bike trails. You will have access to maps, videos and photos.  </p>
                     </div>
                 </div>
             </div>
+        </div>
+
+        <!-- Featured Brands Row -->
+        <h4>Featured Brands</h4>
+        <div class="row row-content pb-3">      
+            
+            <div class="col col-md-2 pt-5">
+                <a class="btn" href="https://www.deitycomponents.com/"><img class="d-block w-100" src="img/Logos/Deity.png" alt="Deity"></a>
+
+            </div>
+            <div class="col col-md-2">
+                <a class="btn" href="https://www.industrynine.com/"><img  class="d-block w-100" src="img/Logos/industry9.png" alt="Industry Nine"></a>
+
+            </div>
+            <div class="col col-md-2 pt-5">
+                <a class="btn" href="https://www.pocsports.com/us/home/"><img class="d-block w-100" src="img/Logos/POC.png" alt="POC"></a>
+
+            </div>
+            <div class="col col-md-2">
+                <a class="btn" href="https://www.santacruzbicycles.com/en-US/"><img class="d-block w-100" src="img/Logos/SantaCRUZ.webp" alt="Santa Cruz"></a>
+
+            </div>
+            <div class="col col-md-2">
+                <a class="btn" href="https://www.shimano.com/en/"><img class="d-block w-100" src="img/Logos/Shimano.png" alt="Shimano"></a>
+
+            </div>
+            <div class="col col-md-2 pt-4">
+                <a class="btn" href="https://www.specialized.com/us/en"><img class="d-block w-100" src="img/Logos/specialized.png" alt="Specialized"></a>
+
+            </div>
 
 
-
-
-
-
-
+        </div>    
     </div>
-
-
 
     <!-- Footer with Link, Social Media, Contact info and Newsletter sign up -->
     <footer class="site-footer">
         <div class="container">
             <div class="row">
-                <div class="col-4 col-sm-2 offset-1 text-white">
-                    <h5>Links</h5>
-                    <ul class="list-unstyled">
-                        <li ><a class="text-white" href="#">Shop</a></li>
-                        <li><a class="text-white" href="#">Services</a></li>
-                        <li><a class="text-white" href="#">Trail Reviews</a></li>
-                        <li><a class="text-white" href="#">About US</a></li>
-                    </ul>
+                <div class="col-4 col-sm-2 text-white">
+                    <h5>Join our mailing list:</h5>
+                    <form>
+                        <div class="form-group">
+                            <input type="email" class="form-control" placeholder="Enter your email" aria-describedby="emailHelp"/>
+                            <button type="submit" class="btn btn-danger">Sign Up</button>
+                            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                        </div>
+                        
+                    </form>
                 </div>
-                <div class="col-6 col-sm-5 text-center text-white">
-                    <h5>Social</h5>
+                <div class="col-6 col-sm-5 text-center">
+                    <h5 class="text-white">Follow Us</h5>
                     <a class="btn btn-lg btn-social-icon btn-instagram" href="http://instagram.com/"><i class="fa fa-instagram text-white"></i></a>
                     <a class="btn btn-lg btn-social-icon btn-facebook" href="http://facebook.com/"><i class="fa fa-facebook text-white"></i></a>
                     <a class="btn btn-lg btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fa fa-twitter text-white"></i></a>
                     <a class="btn btn-lg btn-social-icon btn-google" href="http://youtube.com/"><i class="fa fa-youtube text-white"></i></a>
                 </div>
                 <div class="col-sm-4 text-center text-white">
-                    <h5>Contact</h5>
+                    <h5>Get in Touch</h5>
                     <a role="button" class="btn btn-link text-white" href="tel:+6547646468"><i class="fa fa-phone"></i> 1-xxx-yyy-zzzz</a></br>
             	    <a role="button" class="btn btn-link text-white" href="mailto:theministryofcycling@gmail.com"><i class="fa fa-envelope-o"></i> theministryofcycling@gmail.com</a>
                 </div>
             </div>
-            <form>
-                <div class="form-group">
-                    <label>BE THE FIRST TO KNOW ABOUT NEW GEAR AND REVIEWS!</label>
-                    <input type="email" class="form-control" placeholder="Enter your email" aria-describedby="emailHelp">
-                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-                </div>
-                <button type="submit" class="btn btn-danger">Sign Up</button>
-              </form>
-
         </div>
     </footer>
 
