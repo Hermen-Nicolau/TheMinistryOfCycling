@@ -1,6 +1,8 @@
-.bg-nav1, .bg-footer, .site-footer {
+.bg-nav1, .bg-footer, .site-footer, .modal-header{
     background-color: #0B6809 ;
 }
+
+
 
 h5 {
     font-family: "Open Sans", sans-serif;
