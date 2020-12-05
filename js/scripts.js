@@ -1,4 +1,4 @@
-var mymap = L.map('generalMap').setView([36.099861, -80.244217], 11);
+let mymap = L.map('generalMap').setView([36.099861, -80.244217], 11);
 
 
 L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
@@ -12,31 +12,32 @@ L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_toke
 
 
 //Adding a marker for Hobby
-var marker1 = L.marker([36.0327, -80.3058]).addTo(mymap);
+let marker1 = L.marker([36.0327, -80.3058]).addTo(mymap);
 marker1.bindPopup("<b>Hobby Park</b><br>").openPopup();
 
+
 //Adding a marker for Tanglewood
-var marker2 = L.marker([36.0054, -80.4082]).addTo(mymap);
+let marker2 = L.marker([36.0054, -80.4082]).addTo(mymap);
 marker2.bindPopup("<b>Tanglewood Park</b><br>").openPopup();
 
 //Adding a marker for Kernersville MTB Park
-var marker3 = L.marker([36.12354, -80.04186]).addTo(mymap);
+let marker3 = L.marker([36.12354, -80.04186]).addTo(mymap);
 marker3.bindPopup("<b>Kernersville MTB </b><br>").openPopup();
 
 //Adding a marker for Salem Lake
-var marker4 = L.marker([36.0940, -80.1932]).addTo(mymap);
+let marker4 = L.marker([36.0940, -80.1932]).addTo(mymap);
 marker4.bindPopup("<b>Salem Lake</b><br>").openPopup();
 
 //Weather
-!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+!function(d,s,id){let js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
 
 
 
 //Rating code
-var __slice = [].slice;
+let __slice = [].slice;
 
 (function($, window) {
-    var Starrr;
+    let Starrr;
 
     Starrr = (function() {
         Starrr.prototype.defaults = {
@@ -46,7 +47,7 @@ var __slice = [].slice;
         };
 
         function Starrr($el, options) {
-            var i, _, _ref,
+            let i, _, _ref,
                 _this = this;
 
             this.options = $.extend({}, this.defaults, options);
@@ -73,7 +74,7 @@ var __slice = [].slice;
         }
 
         Starrr.prototype.createStars = function() {
-            var _i, _ref, _results;
+            let _i, _ref, _results;
 
             _results = [];
             for (_i = 1, _ref = this.options.numStars; 1 <= _ref ? _i <= _ref : _i >= _ref; 1 <= _ref ? _i++ : _i--) {
@@ -92,7 +93,7 @@ var __slice = [].slice;
         };
 
         Starrr.prototype.syncRating = function(rating) {
-            var i, _i, _j, _ref;
+            let i, _i, _j, _ref;
 
             rating || (rating = this.options.rating);
             if (rating) {
@@ -115,11 +116,11 @@ var __slice = [].slice;
     })();
     return $.fn.extend({
         starrr: function() {
-            var args, option;
+            let args, option;
 
             option = arguments[0], args = 2 <= arguments.length ? __slice.call(arguments, 1) : [];
             return this.each(function() {
-                var data;
+                let data;
 
                 data = $(this).data('star-rating');
                 if (!data) {
