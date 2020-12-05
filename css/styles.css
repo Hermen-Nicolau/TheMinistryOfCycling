@@ -10,3 +10,8 @@ h4 {
     font-family: "Open Sans", sans-serif;
     font-size: xx-large;
 }
+
+
+#generalMap { 
+    height: 400px; 
+}
