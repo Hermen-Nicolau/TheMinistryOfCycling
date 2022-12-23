@@ -3,7 +3,7 @@ My first website based on the mountain biking community
 
 
 
-##Questions 
+## Questions 
 1. What would you do differently on a managed cluster (EKS, GKE…) regarding step 4?
 2. How would you monitor the application?
 3. What would you change to add a PostgreSQL container?
@@ -13,5 +13,5 @@ Difficulty: on a scale from 0 (easy) to 10 (hard), how would you rate the diffic
 of this test?
 Did you find the test interesting? If not, please tell us why.
 
-#Bonus points
+# Bonus points
 
